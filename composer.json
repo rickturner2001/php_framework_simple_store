@@ -1,0 +1,16 @@
+{
+    "name": "rickturner/rework",
+    "authors": [
+        {
+            "name": "rickturner01",
+            "email": "rickturner2001@gmail.com"
+        }
+    ],
+
+    "autoload":{
+        "psr-4": {
+            "app\\": "./"
+        }
+    }, 
+    "require": {}
+}

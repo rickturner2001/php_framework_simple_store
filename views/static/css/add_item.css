@@ -1,0 +1,10 @@
+.btn-submit{
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden{
+    display: none;
+    visibility: none;
+}
