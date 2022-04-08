@@ -1,11 +1,33 @@
-.container {
+@import "abstracts/variables";
+
+#brand{
+    color: $color-white;
+}
+
+.navbar{
+    padding: 1rem 0;
+    background-color: $color-primary-dark !important;
+
+
+    &__btn-primary{
+        background-color: $color-secondary-light;
+        color: $color-white;
+        transition: all 0.2s linear;
+        box-shadow: $box-shadow-light;
+        &:hover{
+            color: $color-white;
+            transform: scale(95%);
+        }
+    }
     
-}
-
-.card{
-    background: #f7f7f8;
-}
-
-.container-gap{
-    gap: 2rem;
+    &__btn-secondary{
+        background-color: $color-tertiary-light;
+        color: $color-white;
+        transition: all 0.2s linear;
+        box-shadow: $box-shadow-light;
+        &:hover{
+            color: $color-white;
+            transform: scale(95%);
+        }
+    }
 }

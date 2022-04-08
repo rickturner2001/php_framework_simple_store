@@ -1,3 +1,66 @@
-body{
-    
-}
+body {
+  font-family: "Bebas Neue", cursive !important;
+  font-family: "Roboto", sans-serif !important; }
+
+.main-container {
+  background: linear-gradient(rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+  padding: 4rem 2rem;
+  margin: 6rem 3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
+  .main-container__button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 3rem;
+    margin-bottom: 4rem; }
+
+.card {
+  background: #f7f7f8;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.1s linear;
+  outline: #2998ff 3px solid;
+  margin-bottom: 1rem;
+  margin-left: 1rem; }
+  .card-hidden-border {
+    outline: none !important; }
+  .card-title {
+    text-align: center; }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem; }
+  .card-price {
+    font-weight: 600; }
+  .card-sku {
+    background-color: #000;
+    font-size: 0.9rem;
+    margin-bottom: 16px !important; }
+  .card-title {
+    text-transform: capitalize;
+    margin-bottom: 2rem; }
+  .card-bottom {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between; }
+  .card-type {
+    text-transform: capitalize;
+    font-size: 0.9rem; }
+    .card-type-book {
+      background-color: #28b485; }
+    .card-type-dvd {
+      background-color: #ff7730; }
+    .card-type-furniture {
+      background-color: #5643fa; }
+  .card:hover {
+    transform: scale(1.02); }
+  .card-items {
+    display: flex;
+    justify-content: space-around;
+    text-align: center; }
+
+.container-gap {
+  gap: 3rem;
+  justify-content: center; }
+
+.checkbox {
+  display: none; }

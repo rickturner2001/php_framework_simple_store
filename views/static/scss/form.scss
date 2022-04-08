@@ -1,0 +1,95 @@
+@import "abstracts/variables";
+
+#app{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 4rem;
+    background: linear-gradient(rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8));
+    box-shadow: $box-shadow-strong;
+}
+
+#product_form{
+    max-width: 50rem;
+}
+
+.main-container{
+    display: flex;
+    margin: 4rem;
+}
+
+.card {
+    background: #f7f7f8;
+    box-shadow: $box-shadow-light;
+    transition: all 0.1s linear;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    max-height: 17rem;
+
+    &-title{
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+    }
+
+    &-bottom{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+
+    &-sku{
+        background-color: $color-black;
+        margin-bottom: 16px !important;
+    }
+    &-type{
+        background-color: $color-secondary-dark;
+    }
+
+    &-items{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.btn-submit{
+    width: 10%;
+    
+}
+.form-btns{
+    justify-content: center;
+    gap: 2rem;
+}
+
+.hidden{
+    display: none;
+    visibility: none;
+}
+
+label{
+    width: 100%;
+    text-align: center;
+}
+
+
+.alert-danger{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.btn-submit{
+    background-color: $color-tertiary-light;
+    color: white;
+
+    transition: all 0.2s linear;
+    &:active{
+        color: white;
+        transform: scale(95%);
+    }
+    &:hover{
+        color: white;
+    }
+}
