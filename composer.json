@@ -12,5 +12,8 @@
             "app\\": "./"
         }
     }, 
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "^214.0"
+    }
 }

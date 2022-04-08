@@ -1,1 +1,1 @@
-web: cd public && php -S localhost:8080
+web: vendor/bin/heroku-php-apache2
