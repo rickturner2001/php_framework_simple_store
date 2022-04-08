@@ -10,6 +10,7 @@ class Application
     public Response $response;
     public Database $db;
     public static Application $app;
+    public DbModel $dbModel;
 
     public function __construct($rootPath)
     {

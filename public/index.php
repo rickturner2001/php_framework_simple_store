@@ -9,9 +9,10 @@ use app\controllers\SiteController;
 $app = new Application(dirname(__DIR__));
 
 $app->router->get("/", [SiteController::class, 'home']);
+$app->router->post("/", [ItemController::class, 'home']);
 // $app->router->get("/add_item", [SiteController::class, 'item']);
-$app->router->get("/add_item", [ItemController::class, 'item']);
-$app->router->post("/add_item", [ItemController::class, 'item']);
+$app->router->get("/add-product", [ItemController::class, 'item']);
+$app->router->post("/add-product", [ItemController::class, 'item']);
 
 
 $app->run();

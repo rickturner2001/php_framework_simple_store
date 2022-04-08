@@ -28,6 +28,8 @@ abstract class DbModel extends Model
         return true;
     }
 
+
+
     public static function prepare($sql)
     {
         return Application::$app->db->pdo->prepare($sql);

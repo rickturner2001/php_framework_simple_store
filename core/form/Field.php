@@ -15,8 +15,8 @@ class Field
     {
 
         return '<div class="mb-3">
-                 <label  for="%s" class="form-label">%s</label>
-                 <input @input="validate%s" type="%s" name="%s" id="%s" aria-describedby="emailHelp" value="%s" class="form-control%s">
+                 <label  id="%s-label" for="%s" class="form-label">%s</label>
+                 <input  id="%s" @input="validate%s" type="%s" name="%s" id="%s" aria-describedby="emailHelp" value="%s" class="form-control%s">
                  <div class="invalid-feedback">%s</div>
                 </div>';
     }
@@ -50,7 +50,9 @@ class Field
             return sprintf(
                 $this->regularInput(),
                 $this->attribute,
+                $this->attribute,
                 ucfirst($this->attribute),
+                $this->attribute,
                 $this->model->labels()[$this->attribute] ?? $this->attribute,
                 $this->type,
                 $this->attribute,

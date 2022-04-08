@@ -11,7 +11,7 @@ class Form
 
     public static function begin($action, $method)
     {
-        echo sprintf('<form action="%s" method="%s" id="product_form">', $action, $method);
+        echo sprintf('<form action="%s" method="%s" id="product_form" onsubmit="return validateForm()">', $action, $method);
 
         return new Form();
     }

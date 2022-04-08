@@ -7,6 +7,8 @@ use app\core\Application;
 use app\core\Controller;
 use app\core\Request;
 use app\models\ItemModel;
+use app\core\components\ItemDisplay;
+
 
 class ItemController extends Controller
 {
@@ -18,6 +20,7 @@ class ItemController extends Controller
 
             if ($itemModel->validate() && $itemModel->register()){
                 Application::$app->response->redirect("/");
+            }else{
             }
           
             return $this->render('add_item', [
@@ -29,4 +32,15 @@ class ItemController extends Controller
             'model' => $itemModel
         ]);
     }
+
+    public function home(Request $request){
+
+
+        $requestBody = $request->getBody();
+        ItemDisplay::massDelete($requestBody);
+        Application::$app->response->redirect("/");
+
+      
+    }
+
 }
