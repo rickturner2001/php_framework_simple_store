@@ -39,7 +39,7 @@ const app = Vue.createApp({
             this.type = event.target.value
         },
         validateSKU(event){
-            if (event.target.value.length === 9){
+            if (event.target.value.length === 10){
                 this.skuLengthError = false
                 if(!skuList.includes(event.target.value)){
                     this.sku = event.target.value

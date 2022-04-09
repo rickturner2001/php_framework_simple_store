@@ -36,7 +36,6 @@ body {
     font-size: 0.9rem;
     margin-bottom: 16px !important; }
   .card-title {
-    text-transform: capitalize;
     margin-bottom: 2rem; }
   .card-bottom {
     margin-top: 2rem;
@@ -62,5 +61,5 @@ body {
   gap: 3rem;
   justify-content: center; }
 
-.checkbox {
+.delete-checkbox{
   display: none; }

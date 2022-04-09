@@ -25,7 +25,7 @@ $skus = $itemsObj->getSkus();
                 <strong>SKU Value Error!</strong> This SKU has already been registered
             </div>
             <div v-if="skuLengthError" class="alert alert-danger  fade show" role="alert">
-                <strong>SKU Value Error!</strong> The SKU should be 9 characters long
+                <strong>SKU Value Error!</strong> The SKU should be 10 characters long
             </div>
         </div>
         <div class="col">
@@ -51,9 +51,9 @@ $skus = $itemsObj->getSkus();
     <div v-if='type === "book"' class="row">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Weight (Kg)</label>
-            <input @input='validateAttribute' type="text" id="book" name="attribute" class="form-control" id="exampleFormControlInput1" placeholder="200">
+            <input @input='validateAttribute' type="text" id="weight" name="attribute" class="form-control" id="exampleFormControlInput1" placeholder="200">
             <div v-if="attributeErrorNonNumeric" class="alert alert-danger  fade show" role="alert">
-                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <strong>Book Weight value error! </strong>Please Make sure that weight is a numeric value
             </div>
 
         </div>
@@ -88,9 +88,9 @@ $skus = $itemsObj->getSkus();
     <div v-if='type === "dvd"' class="row">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Size (MB)</label>
-            <input @input='validateAttribute' type="text" id="book" name="attribute" class="form-control" id="exampleFormControlInput1" placeholder="200">
+            <input @input='validateAttribute' type="text" id="size" name="attribute" class="form-control" id="exampleFormControlInput1" placeholder="200">
             <div v-if="attributeErrorNonNumeric" class="alert alert-danger  fade show" role="alert">
-                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <strong>DVD Size value error! </strong>Please Make sure that size is a numeric value
             </div>
         </div>
     </div>
@@ -99,7 +99,7 @@ $skus = $itemsObj->getSkus();
         <div class="d-flex form-btns">
 
             <button type="submit" name="submit" class="btn btn-submit">Save</button>
-            <a href="add-product" class="btn btn-danger" id="reset">Cancel</a>
+            <a href="/" class="btn btn-danger" id="reset">Cancel</a>
 
         </div>
     </div>

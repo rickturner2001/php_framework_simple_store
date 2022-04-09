@@ -19,7 +19,7 @@ class ItemController extends Controller
             $itemModel->loadData($request->getBody());
 
             if ($itemModel->validate() && $itemModel->register()){
-                Application::$app->response->redirect("/");
+                Application::$app->response->redirect("/add-product");
             }else{
             }
           

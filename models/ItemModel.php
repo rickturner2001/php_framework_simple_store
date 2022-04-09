@@ -28,7 +28,7 @@ class ItemModel extends DbModel
     public function rules(): array
     {
         return [
-            "sku" => [self::RULE_REQUIRED, [self::RULE_MIN, 'min' => 9], [self::RULE_MAX, 'max' => 9], [self::RULE_UNIQUE, 'class' => self::class]],
+            "sku" => [self::RULE_REQUIRED, [self::RULE_MIN, 'min' => 9], [self::RULE_MAX, 'max' => 10], [self::RULE_UNIQUE, 'class' => self::class]],
             "name" => [self::RULE_REQUIRED],
             "price" => [self::RULE_REQUIRED, [self::RULE_NUMERIC]],
             "type" => [self::RULE_REQUIRED],

@@ -18,7 +18,7 @@ $items = $itemsObj->getItems();
 
     <div class="main-container__button-container">
 
-        <input class="btn navbar__btn-secondary" type="submit" form="app" value="MASS DELETE">
+        <button class="btn navbar__btn-secondary" type="submit" form="app" id="delete-product-btn">MASS DELETE</button>
         <a class="btn navbar__btn-primary" href="/add-product">ADD</a>
     </div>
 
